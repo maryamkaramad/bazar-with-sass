@@ -1,0 +1,17 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "",
+  "source": "componenet/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maryam",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}
