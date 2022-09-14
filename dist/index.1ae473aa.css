@@ -1,6 +1,6 @@
 body {
   color: #696666;
-  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-family:  Regular, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -8,8 +8,13 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: small;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  color: #6b6969;
+  color: #424242;
+  font-size: 18px;
 }
 
 ::placeholder {
@@ -33,10 +38,21 @@ header {
   display: flex;
 }
 
+.container_header a:hover {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+}
+
 .container_header .header_right {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  display: flex;
+}
+
+.container_header .header_right a {
+  align-items: center;
+  gap: 7px;
   display: flex;
 }
 
@@ -63,6 +79,11 @@ header {
   font-size: 17px;
 }
 
+.container_header .header_right .input input:focus {
+  border-color: none;
+  outline: none;
+}
+
 .container_header .header_left {
   flex-direction: row;
   justify-content: flex-end;
@@ -71,8 +92,15 @@ header {
   display: flex;
 }
 
+.container_header .header_left a {
+  align-items: baseline;
+  gap: 10px;
+  display: flex;
+}
+
 .container_header .header_left button {
   color: #f0f8ff;
+  cursor: pointer;
   background-color: #be3737;
   border: none;
   border-radius: 10px;
@@ -101,11 +129,12 @@ header {
   cursor: pointer;
   align-items: baseline;
   column-gap: 5px;
+  font-size: small;
   list-style: none;
   display: flex;
 }
 
-.aside ul li .svg {
+.aside ul li:hover, .aside ul li .svg {
   color: #000;
 }
 
@@ -121,14 +150,30 @@ header {
 .aside .asaide_footer .about {
   max-width: 212px;
   flex-flow: wrap;
-  column-gap: 26px;
-  font-size: small;
+  column-gap: 12px;
   display: flex;
+}
+
+.aside .asaide_footer .about p {
+  color: #696666;
+  font-size: 12px;
+}
+
+.aside .asaide_footer .about p:hover {
+  color: #000;
 }
 
 .aside .asaide_footer .contact {
   justify-content: space-evenly;
   display: flex;
+}
+
+.aside .asaide_footer .contact i {
+  cursor: pointer;
+}
+
+.aside .asaide_footer .contact i:hover {
+  color: #000;
 }
 
 .main p {
@@ -139,6 +184,7 @@ header {
   cursor: pointer;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
+  font-size: small;
   display: grid;
 }
 
